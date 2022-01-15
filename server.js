@@ -23,7 +23,7 @@ app.use('/breads', breadsController)
 
 // Catch-all
 app.get('*', (req, res) => {
-    res.send('404')
+    res.render('Missing404')
 })
 
 // LISTEN

@@ -6,10 +6,10 @@ function Index ({breads, title}) {
         <Default title={title}>
           <ul>
           {
-            breads.map((bread, index) => {
+            breads.map((bread) => {
                 return (
-                <li key={index}>
-                  <a href={`/breads/${index}`}>
+                <li key={bread}>
+                  <a href={`/breads/${bread.id}`}>
                     {bread.name}
                   </a>
                 </li>)

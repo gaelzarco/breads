@@ -24,11 +24,15 @@ app.get('/', (req, res) => {
     res.send('Welcome to an app about bread')
 })
 
-// Breads
+// BREADS
 const breadsController = require('./controllers/breads_controller.js')
 app.use('/breads', breadsController)
 
-// Catch-all
+// BAKERS
+const bakersController = require('./controllers/bakers_controllers.js')
+app.use('/bakers', bakersController)
+
+// CATCH-ALL
 app.get('*', (req, res) => {
     res.render('Missing404')
 })

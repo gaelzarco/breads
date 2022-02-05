@@ -19,7 +19,7 @@ mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopolo
 
 // ROUTES
 app.get('/', (req, res) => {
-    res.send('Welcome to an app about bread')
+    res.render('home')
 })
 
 // BREADS
